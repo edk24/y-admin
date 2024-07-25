@@ -1,0 +1,26 @@
+.y-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--layout-background-color);
+    background-image: var(--layout-background);
+
+    .ant-card {
+        width: 360px !important;
+    }
+
+    &__body {
+
+    }
+
+    &__footer {
+        margin-top: 1rem;
+
+        a {
+            color: #999;
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+.y-layout {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    background-color: var(--layout-background-color);
+    background-image: var(--layout-background);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-width: 1140px;
+    min-height: 100vh;
+
+    &__header {
+        height: 4rem;
+        padding: 0 2.5rem;
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+
+        
+    }
+
+    &__container {
+        padding: 0 2.5rem;
+    }
+}
+
+.y-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__item {
+        margin: 0 1rem;
+
+        a {
+            color: var(--text-color) !important;
+            font-size: 14px !important;
+            touch-action: manipulation;
+
+            &:hover {
+                color: var(--primary-color);
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    &__item.active {
+        a {
+            padding: 8px 10px;
+            border-radius: 4px;
+            background: var(--primary-color-opacity-1);
+            color: var(--primary-color) !important;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+    }
+}
